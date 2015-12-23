@@ -1,0 +1,35 @@
+Python SIG 2015, BMSCE, Bangalore
+Assignment questions
+
+1) Write a program that reads two numbers from the user,
+   (converting them to integers if they are floating point numbers)
+   and then prints their sum along with the user input in this format:
+		'enter number 1:' 5.67
+		'enter number 2:' 5.67
+		'You entered 5.67 and 5.67. Adding 5 and 5, sum is 10'
+
+2) Write a program that takes input  of the form
+   'num1,num2,[any one of +-*/]' as a string
+   and performs the given operation. In other words, your program is a simple calculator
+   which can perform floating point arithmetic.
+   Try making improvements like asking for number of decimal digits to be displayed.
+
+3) Input an angle as degrees. And find a trigonometric ratio based on users choice[out of sin, cos and tan].
+   Do this 'n' times, where 'n' was entered by the user initially.
+
+4) Input two strings. One  takes in login_ID and other password.
+   It prints 'login_ID is successful' if password is 'password'.
+   Else should show a fail message and keep prompting user for password.
+
+5) Find the factorial of a given number. Don't import math.
+   Try to make your program break and fix all those cases. (recursive vs. iterative)
+
+6) Assume the user is inputting integers only. If the entered integer is odd,
+   it returns the sum of all the even integers entered up to that point and exits the program.
+
+7) Write a program which takes a list of alphabets (chars) as input and returns a list of same length
+   containing Boolean values as output. The corresponding Boolean value is True iff the char is a vowel.
+
+
+Class 2: 29/9/15
+Questions by Pranav S. Bijapur, Tarun Verma

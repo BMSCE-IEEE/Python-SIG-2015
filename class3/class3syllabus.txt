@@ -1,0 +1,38 @@
+This is/was the syllabus of Python SIG. Conducted at BMSCE, Bangalore.
+Under BMSCE IEEE.
+Taught by Pranav S. Bijapur and Tarun Verma.
+Syllabus by Pranav S. Bijapur and Tarun Verma
+
+Class 3 - 3/10/2015
+
+Brief mention and revision of:
+- useful built-ins - range(), len(), dir(), int(), float(), str()
+- if-elif-else
+- string formatting: .format() and {}
+- while and for loops -
+-- while boolean_expression:
+-- for iter_var in sequence: (usually (x)range())
+
+Common errors and debugging
+
+Functions:
+- What are functions? Why are they important?
+- What are methods?
+- def keyword
+- parameters vs arguments
+- flow of execution in a program with functions and function calls
+- docstrings
+- functions that return values
+- default arguments
+- *args and **kwargs
+
+A more detailed look at import (PYA only):
+- sys.path
+- .py and .pyc files - look at both with a text editor
+- Let's modify something
+
+List attributes:
+- append - extend, remove - pop, sort - reverse
+
+String attributes:
+- split - join, upper - lower, startswith - endswith, many others

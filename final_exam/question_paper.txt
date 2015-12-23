@@ -1,0 +1,57 @@
+Python SIG 2015, BMSCE, Bangalore
+FINAL EXAM - PYA - 20/11/2015
+Questions by Pranav S. Bijapur, Tarun Verma, Rahul Kumar
+
+Total marks - 70
+
+General instructions:
+ - Make sure to use try-except where possible and handle edge cases
+ - Try to write good code as opposed to just making it work
+ - Try to define 'logical' functions whenever relevant
+ - You can't use the internet, but you can use the offline resources/textbooks being distributed
+ - When you are done, make a folder named after yourself and save your .py files in one of the pen drives
+
+1) (10M) Write a program that calculates the 'value' of a string. It should prompt the user for a string and print the "value"
+     Calculate value using the following scheme:
+	a/A - 0
+	b/B - 1
+	...
+	z/Z - 25
+	any other character - -1
+  Example: 'abc:(*&(*^&^*AAAAAAA' = 1 + 2 - 10 = -7
+
+2) (20M) Many list methods return None and modify the list. Define a function "modifier" that returns the modified form
+of the list instead of None
+	- function inputs are the method as a string (eg. 'append') and the list and any other parameters required by the list 	method
+	- return value is the list modified by the input method
+	(initially, just try to support 'append')(then extend)(reverse and sort next)
+	(then pop and remove)(finally insert)
+	(5M for insert, 10 for append and extend, 5 for reverse and 	 sort; total 20M)
+     Example: a = [1, 2, 3]
+	    b = a.append(4)
+	    (here b = None and a = [1, 2, 3, 4] so you can't do
+	    a = a.append(4))
+	    a = [1, 2, 3]
+	    a = modifier(a, 'append', 4)
+	    (here a = [1, 2, 3, 4])
+	(Ignore double underscore methods and those that don't return None)
+
+3) (5M) Import your 'value' function into another program and write a program that:
+	- prompts the user for a string
+	- calls the value function by importing the .py file where value is defined
+	- prints True if the returned "value" is even, False otherwise
+
+4) (10M) Write a program that reads integers until the user types 'end'. If any integer was entered more than once, it prints them
+along with the number of times they were entered. It also prints the sum and average of all entered numbers.
+
+
+5) (10M) Write a program that prompts the user for keys of a dictionary and then for the corresponding values in order.
+Then it prints a dictionary containing the entered key-value pairs.
+
+6) (20M) Make a basic file backup program. Every 10 seconds, it should check a specified text file for any changes.
+   If the file has been changed, it writes every changed line to another specified text file along with a timestamp.
+	 (Bonus points if you can make this work for a file in a different directory)
+
+7) (5M) Define a class student and functions to add student (with student name as parameter) and delete student (with name as parameter)
+	Name should be stored as tuple of (last name,first name)
+	(where last and first names are both strings)

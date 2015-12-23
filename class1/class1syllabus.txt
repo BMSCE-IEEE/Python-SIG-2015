@@ -1,0 +1,27 @@
+This is/was the syllabus of Python SIG. Conducted at BMSCE, Bangalore.
+Under BMSCE IEEE.
+Taught by Pranav S. Bijapur and Tarun Verma.
+Syllabus by Pranav S. Bijapur and Tarun Verma
+
+Class 1 – 12/9/2015
+
+Hello world in Python and compared to other programming languages
+Python 2 vs 3; why Python 2
+(PYA) What is code? Code as written for humans and run on computers as opposed to computers only
+(PYA) Everything is a object
+(PYA) Python implementations; CPython – C heritage, eg using number as boolean
+What makes Python different: dynamic typing, whitespace, REPL
+Zen of python, import == batteries included
+Keywords and identifiers
+Taking inputs – raw_input; to NOT use input
+Assignment operations
+Data types – just general idea; flexibility in Python
+print statement; NOT function
+Arithmetic operations – floating point division
+Basic debugging – common errors that can occur and what they mean
+Useful built-in functions – len, sum, max, min; list methods, string methods
+Give warning about mutability, so list methods not that straightforward; tell at least look into string methods on documentation
+Reading documentation
+Strings – immutable, indexable, single/double
+Possible topic: Conditionals – if else; elif; single line ternary X if Y else Z
+Next class assignment? (PYA) Convert a sufficiently complex program you wrote in C/C++/Java to Python

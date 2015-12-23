@@ -1,0 +1,67 @@
+This is/was the syllabus of Python SIG. Conducted at BMSCE, Bangalore.
+Under BMSCE IEEE.
+Taught by Pranav S. Bijapur and Tarun Verma.
+Syllabus by Pranav S. Bijapur and Tarun Verma
+
+Class 4 - 17/10/2015
+
+Brief mention and revision of:
+Functions - general syntax, docstrings, scope of variables, global statement
+
+How import works - .py and .pyc files, how we can make our own modules (hint: sys.path)
+Functions part 2! - default args, *args and **kwargs
+
+List and String methods -
+- basic difference in what they return (None or a modified string)
+
+- Lists - append, extend, remove, pop, reverse, sort
+
+- Strings - split - join, upper - lower, startswith - endswith
+
+- import string for string.whitespace and string.punctuation
+
+
+Tuples and Dictionaries
+Tuples -
+- What is a tuple?
+
+- We can only 'count' and 'index' them, why?
+
+- Why use them?
+- A tuple is not parentheses, it is commas!
+
+- Related question: How to create a tuple with a single element?
+
+Dictionaries -
+- What is a dictionary? Why use them?
+
+- Only immutable objects can be keys
+
+- key, value pairs
+
+- dict methods - mainly: .keys, .values, .items
+
+- for i in dict set i to what?
+
+- .get to prevent KeyError
+
+
+
+Exception handling -
+- try except else finally
+
+- assert and raise
+
+- except ExceptionName, errorinfo
+
+- How to catch multiple exceptions with a single except?
+
+- with X as Y: to replace try in some cases
+
+
+try:
+	#potentially dangerous code
+except (TypeError,KeyError):
+	print 'type or key'
+except ValueError, err_info:
+	print 'value', str(err_info)

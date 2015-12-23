@@ -1,0 +1,40 @@
+Python SIG 2015, BMSCE, Bangalore
+PYTHON SIG TEST - PYA - 20/11/2015
+- All questions are Multiple Choice Questions
+- Only one answer is correct
+- +1 for correct answer; no penalty for wrong answers
+
+
+1 B
+2 A
+3 A
+4 C
+5 D
+6 B
+7 A
+8 D
+9 A
+10 B
+11 D
+12 B
+13 A
+14 B
+15 A
+16 A
+17 B
+18 B
+19 C
+20 B
+21 B
+22 B
+23 D
+24 B
+25 B
+26 C
+27 D
+28 B
+29 A
+30 D
+
+-All programming questions were verified on Python 2.7.9 on Windows Powershell
+-All questions are by Pranav S Bijapur and Tarun Verma

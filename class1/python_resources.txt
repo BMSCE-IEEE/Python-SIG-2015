@@ -1,0 +1,65 @@
+Python SIG 2015, BMSCE, Bangalore
+Python SIG - Resources - Sep 2015
+
+Prologue:
+	Python is a free and open source language. You can find many resources online to help you learn.
+	Many of them are free and great too! Here is a list I made - both from personal experience 
+	and searching on the internet. Since the second part is something you can all do; 
+	I have tried to document my personal experience with these resources.
+
+MOOCs:
+	1) edX - Introduction to Computer Science and Programming Using Python - MITx
+	   	- it started recently, so you could join quickly if you are interested. 
+		It is offered multiple times in a year so don't worry. I have completed this course and 
+		recommend it. Though it does require a large number of hours per week, 
+		it is worth the effort. This course is about learning CS more than learning Python. 
+		Also, if you don't/can't do this course, I suggest you go through the course wiki,
+		it has a very useful collection of links.
+	2) Google's Python Class by Google (mainly Nick Parlante)- Google has released their internal material 
+		used to teach programmers who know other languages but not Python. It has 2 days of lectures (on YouTube)
+		and a few exercises. People with programming experience can try this.
+	3) Coursera - Programming for Everybody (Python) - University of Michigan	 
+	    	This is a course by Charles Severance. Technically, it has been replaced by a Coursera 
+		'specialization' (which is paid); so I doubt you'll be able to access old the course material
+		even though they have a separate search result as of now. (27-9-15)
+	4) Udacity - Introduction to Computer Science
+		This course attempts to teach you Python by building a search engine. Although the premise is 
+		interesting, I didn't find I was actually learning to program (or even CS, for that matter)
+		and so gave up on the course after a few weeks. Even the quizzes weren't very challenging, IMO.
+		It is interesting however, if you know about the basics and would like to see how some project 
+		developed from scratch.
+Books: All these books are available to read for free online. (Legally, in case you were wondering.)
+	1) Learn Python The Hard Way by Zed Shaw - is the most popular book I've seen being recommended.
+	Personally, I didn't much like the teaching style used. Also note that the book is a bit outdated.
+	(For example, it never mentions .format()) But since it is the most popular, you should consider
+	giving it a shot.
+	2) A Byte of Python by Swaroop C H - is also a great choice. It is a simple textbook that explains 
+	things well. It also has additional helpful comments throughout the text for programmers of other 	
+	languages (including C/C++/Java)
+	3) Dive into Python by Mark Pilgrim - This book was rewritten for Python 3 so you'll have to make do 
+	with the older version written for Python 2. This is a fast-paced book that makes you 'dive' straight 
+	into Python. So if are good with programming terminology and OOP, you should try reading this book. 
+	4) Python for Informatics by Charles Severance (the same one mentioned above) is a pretty great book
+	for beginner programmers and also for experienced ones. It is well structured and has several useful 
+	tips and sections in every chapter. The second half starts to seriously deal with the 'informatics' 
+	part of the title and this can feel irrelevant to you.
+	5) How To Think Like a Computer Scientist by Allen B. Downey - is the book on which Python for Informatics
+	is based on. It is well written and very similar to PfI. But the second is very different from PfI.
+	I think it is more beginner friendly than PfI. You should check both out and choose for yourself.
+
+I have read most part (if not all) of all the above books.
+
+Websites:
+	1) https://docs.python.org/ - The Python documentation is pretty well maintained and easy to read.
+	You should read the online docs whenever useful.
+	2) http://docs.python-guide.org - The Hitchhiker's Guide to Python - is a great website with examples.
+	But it is not very comprehensive, to quote them, "This guide is currently under heavy active development."
+	3) You can go to websites like Codecademy, HackerRank and CodingBat to practise just typing a few lines 
+	of code and running it. Codecademy is more tutorial oriented, while the other two are for solving problems.
+		
+Other things to know:
+	1) Code Quality - Google PEP8. No, seriously, do it now.
+	Code quality is an important hurdle for self-taught programmers to overcome.
+	2) Once you are better with Python (and programming in general) things like blogs and GitHub should be more 
+	accessible to you.
+	3) Just start somewhere without obsessing too much about which book and so on and so forth. Good luck!

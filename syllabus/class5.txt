@@ -1,0 +1,55 @@
+This is/was the syllabus of Python SIG.
+Conducted at BMSCE, Bangalore.
+
+Under BMSCE IEEE.
+
+Taught by Pranav S. Bijapur, Tarun Verma and Rahul Kumar
+
+Syllabus by Pranav S. Bijapur, Tarun Verma and Rahul Kumar
+
+
+Class 5 - 7/11/2015
+
+
+
+Brief mention and revision of:
+
+	Tuples
+
+	Dictionaries
+
+	try-except-else-finally
+
+	assert and raise
+
+
+
+Files and File Objects:
+
+	read
+
+	write
+
+	append modes
+
+
+	Read and write methods:
+
+	.read, .readlines, .seek
+
+	.write, .writelines
+
+
+	with open(...) as FileObject syntax
+
+
+
+OOP in Python
+
+	Basic class
+
+	__init__
+
+	Accessing variables and methods of a class
+
+	Creating objects of a class

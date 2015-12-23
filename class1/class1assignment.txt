@@ -1,0 +1,10 @@
+ Python SIG - BMSCE
+1. Write a program to perform addition, subtraction, multiplication, division, on two numbers.
+2. WAP to find area of a circle
+3. WAP to find average of 5 numbers
+4. WAP to concatenate strings
+5. WAP to convert lower case to upper
+6. WAP to input a string with odd number of alphabets and print middlemost
+
+Class 1 - 12/9/2015
+Questions by Tarun Verma

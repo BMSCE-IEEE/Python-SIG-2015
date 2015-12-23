@@ -1,0 +1,942 @@
+# Python SIG 2015, BMSCE, Bangalore
+# Python SIG - Class 5 - PYA - 7-11-15
+# Python interpreter session using IDLE
+# By Rahul Kumar
+
+
+Python 2.7.10 (default, May 23 2015, 09:44:00) [MSC v.1500 64 bit (AMD64)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> a = raw_input("Enter anything")
+Enter anything65
+>>> print a
+65
+>>> b = input()
+5 + 4 + 6
+>>> print b
+15
+>>> myFile = open("BankList.txt")
+>>> myFIle
+
+Traceback (most recent call last):
+  File "<pyshell#5>", line 1, in <module>
+    myFIle
+NameError: name 'myFIle' is not defined
+>>> myFile
+<open file 'BankList.txt', mode 'r' at 0x0000000002B7D420>
+>>> myFile = open("BankList","w")
+>>> myFile
+<open file 'BankList', mode 'w' at 0x0000000002B7D4B0>
+>>> myFile = open("BankList.txt","r")
+>>> print myFile
+<open file 'BankList.txt', mode 'r' at 0x0000000002B7D420>
+>>> myFile.closed
+False
+>>> myFile.mode
+'r'
+>>> myFile.name
+'BankList.txt'
+>>> myFile.close();
+>>> myFile.closed
+True
+>>> print myFile
+<closed file 'BankList.txt', mode 'r' at 0x0000000002B7D420>
+>>> myFile = open("BankList.txt","r")
+>>> print myFile
+<open file 'BankList.txt', mode 'r' at 0x0000000002B7D4B0>
+>>> ReadContent = myFile.read()
+>>> print ReadContent
+List of Demat Branches
+
+Sr No 	Zone	Name Of Branch	Region	Email Id
+1	Agra	Civil Lines	Agra	bmagra0234@centralbank.co.in
+		Aligarh	Agra	bmagra0243@centralbank.co.in
+		Dehradun	Dehradun	cmdehr0285@centralbank.co.in
+
+		Ghaziabad	Meerut	bmmeer0257@centralbank.co.in
+
+		Meerut	Meerut	bmmeer0255@centralbank.co.in
+
+
+2	Ahmedabad	Stock Exchange	Ahmedabad	bmahme31832@centralbank.co.in
+
+		Ashram Road(Ahmed)	Ahmedabad	bmahme0541@centralbank.co.in
+
+		Gandhi Nagar	Ahmedabad	bmahme1364@centralbank.co.in
+
+		HLCC Area	Ahmedabad	bmahme1389@centralbank.co.in
+
+		Laldarwaja	Ahmedabad	bmahme0546@centralbank.co.in
+
+		Nizampura	Baroda	bmbaro0487@centralbank.co.in
+
+		Patel Colony	Jamnagar	bmjamn1289@centralbank.co.in
+
+		Jagnanath Plot	Rajkot	bmrajk0570@centralbank.co.in
+
+		Surat Main Office	Surat	bmsura0512@centralbank.co.in
+
+		Ghod Dhod Road	Surat	bmsura1594@centralbank.co.in
+
+
+3	Bhopal	Jail Road	Bhopal	bmbhop3134@centralbank.co.in
+
+		New Market	Bhopal	bmbhop1454@centralbank.co.in
+
+		Jankganj	Gwalior	bmjwali1834@centralbank.co.in
+
+		Palasia	Indore	bmindo2349@centralbank.co.in
+
+		Siyaganj	Indore	cmindo0764@centralbank.co.in
+
+		Jankinagar	Indore	bmindo2122@centralbank.co.in
+
+
+4	Chandigarh	Ambala Cantt.	Ambala	bmamba0375@centralbank.co.in
+
+		Panchkula	Ambala	bmcmba1454@centralbank.co.in
+
+		15-A, Faridabad	Rohtak	bmroht2223@centralbank.co.in
+
+		Bahadurgarh	Rohtak	bmroht0397@centralbank.co.in
+
+		Rohtak, Civil Rd	Rohtak	bmroht0395@centralbank.co.in
+
+		Model Town, Sonepat	Rohtak	bmroht0394@centralbank.co.in
+
+		Gurgaon	Rohtak	bmroht1026@centralbank.co.in
+
+		Simla	Simla	bmsiml1002@centralbank.co.in
+
+		Amritsar	Amritsar	bmamri0338@centralbank.co.in
+
+		Mandi,Jalandhar City	Jalandhar	bmjala0355@centralbank.co.in
+
+		Miller Ganj	Ludhiana	bmludh0361@centralbank.co.in
+
+		17-B Chandigarh	Chandigarh	bmchan0412@centralbank.co.in
+
+		22-C, Chandigarh	Chandigarh	bmchan0414@centralbank.co.in
+
+
+5	Chennai	Ernakulam	Cochin	bmcoch0963@centralbank.co.in
+
+		Trivandram	Trivandram	bmtriv0937@centralbank.co.in
+
+		Alleppey	Kochi	bmkoch0948@centralbank.co.in
+
+		Addison Building	Chennai	bmchen0878@centralbank.co.in
+
+		Adyar	Chennai	bmchen1293@centralbank.co.in
+
+		Anna Nagar	Chennai	bmchen2473@centralbank.co.in
+		Chennai Main	Chennai	cmchen0879@centralbank.co.in
+
+		Mount Road	Chennai	cmchen0879@centralbank.co.in
+
+		T.Nagar	Chennai	bmchen0883@centralbank.co.in
+
+		Salem	Coimbatore	cmcoim9093@centralbank.co.in
+
+		Coimbatore	Coimbatore	cmcoim0908@centralbank.co.in
+
+		Madurai Main	Madurai	bmmadu0914@centralbank.co.in
+
+
+6	Delhi	Defence Colony	Delhi-A	cmdela0302@centralbank.co.in
+
+		Nehru Place	Delhi-A	agmdela1410@centralbank.co.in
+
+		Parliament Street	Delhi-A	agmdela0316@centralbank.co.in
+
+		Safdarganj	Delhi-A	bmdela0379@centralbank.co.in
+
+		Chandani Chowk	Delhi-B	bmdelb0288@centralbank.co.in
+
+		Delhi Cantt.	Delhi-B	bmdelb1606@centralbank.co.in
+
+		Karol Baug	Delhi-B	bmdelb0309@centralbank.co.in
+
+		Press Area	Delhi-B	agmdelb0306@centralbank.co.in
+
+		M.I.Road	Jaipur	bmjaip0429@centralbank.co.in
+
+		Tonk Road	Jaipur	bmjaip1478@centralbank.co.in
+		G.P.Circle	Kota	bmkota1016@centralbank.co.in
+
+
+7	Guwahati	Guwahati	Guwahati	cmguwa0001@centralbank.co.in
+
+		Dispur	Guwahati	bmguwa3203@centralbank.co.in
+
+
+8	Hyderabad	Brigade Road	Bangalore	cmbang0847@centralbank.co.in
+
+		Bangalore City	Bangalore	cmbang0850@centralbank.co.in
+
+		Miller Road	Bangalore	bmbang2314@centralbank.co.in
+
+		Khairatabad	Hyderabad	bmhyde0810@centralbank.co.in
+
+		C.F.B Hyderabad	Hyderabad	agmhyde0808@centralbank.co.in
+
+		Kalyan Nagar	Hyderabad	bmhyde2369@centralbank.co.in
+
+		Benz Circle	Vijaywada	bmvija1567@centralbank.co.in
+
+		Visakhapatnam	Vijaywada	cmvija0824@centralbank.co.in
+
+
+9	Kolkata	Janpath-BBSR	Bhubaneshwar	bmbhub1969@centralbank.co.in
+
+		Durgapur	Durgapur	bmdurg0120@centralbank.co.in
+
+		Kolkata M.O.	Kolkata-North	cmoperkolk0107@centralbank.co.in
+
+		Rabindra Sarani	Kolkata-North	bmkoln0110@centralbank.co.in
+
+		Red Cross Place	Kolkata North	bmkoln01713@centralbank.co.in
+
+		Park Street	Kolkata-North	bmkols0108@centralbank.co.in
+
+		Camac Street	Kolkata-South	bmkols0093@centralbank.co.in
+
+		Shyambazar	Kolkata-South	bmkols0111@centralbank.co.in
+
+		Ballygunj	Kolkata-South	bmkols0090@centralbank.co.in
+
+		Siliguri	Siliguri	bmsili0125@centralbank.co.in
+
+
+10	Lucknow	Gumati-5	Kanpur	cmkanp0156@centralbank.co.in
+
+		Joppling Road	Lucknow	bmluck2768@centralbank.co.in
+
+		Jhansi-Gwalior Road	Lucknow	bmjhan1216@centralbank.co.in
+
+		Mahanagar	Lucknow	bmluck2148@centralbank.co.in
+
+		Nagarpalika	Varanasi	bmvara0197@centralbank.co.in
+
+
+11	MMZO	Andheri	NMRO	agmmumn0595@centralbank.co.in
+
+		Borivali	NMRO	bmmumn0602@centralbank.co.in
+
+		Chembur	NMRO	bmmumn0623@centralbank.co.in
+
+		Naigaon	NMRO	bmmumn1209@centralbank.co.in
+
+		Prabhadevi	NMRO	bmmumn0628@centralbank.co.in
+
+		Wadala	NMRO	bmmumn0634@centralbank.co.in
+
+		Nariman Point	SMRO	bmmums1067@centralbank.co.in
+
+		Ballard Estate	SMRO	cmmums0597@centralbank.co.in
+
+		Kalbadevi Rd	SMRO	bmmums0610@centralbank.co.in
+
+		Share Bazar	SMRO	bmmums0630@centralbank.co.in
+		Pedder Road	SMRO	bmmums0626@centralbank.co.in
+
+		Panaji	Goa	bmpana0713@centralbank.co.in
+
+		CBD Belapur	Thane	bmthan3154@centralbank.co.in
+
+		Modellagram	Thane	bmthan0637@centralbank.co.in
+
+		Vishnu Nagar	Thane	bmthan2379@centralbank.co.in
+
+
+
+12	Muzaffarpur	----
+13	Nagpur	Amravati	Amravati	bmamra0699@centralbank.co.in
+
+		Ramdas Peth	Nagpur	bmnagp0694@centralbank.co.in
+
+		Nagpur	Nagpur	cmnagp0695@centralbank.co.in
+
+
+14	Patna	Boring Road	Patna	bmpatn0008@centralbank.co.in
+
+		Budh Marg	Patna	bmpatn1488@centralbank.co.in
+
+		Rajendranagar	Patna	bmpatn0011@centralbank.co.in
+
+		Telco Town-Jamshedpur	Ranchi	bmranc1180@centralbank.co.in
+
+		Lalpur, Ranchi	Ranchi	bmranc1223@centralbank.co.in
+
+
+15	Pune	Ahmednagar	Ahmednagar	Bmnaga@centralbank.co.in
+
+		Aurangabad	Aurangabad	bmaura0678@centralbank.co.in
+
+		Nasik	Nasik	bmnasi0706@centralbank.co.in
+		Deccan Gymkhana	Pune	bmpune0655@centralbank.co.in
+
+		Shivaji Nagar	Pune	bmpune0656@centralbank.co.in
+
+		Pune Camp	Pune	bmpune0658@centralbank.co.in
+
+		Koregaon Park	Pune	bmpune3089@centralbank.co.in
+		Sangli	Pune	bmpune0651@centralbank.co.in
+
+
+16	Raipur	Chhatisgarh College	Raipur	bmraip3185@centralbank.co.in
+
+		Bhilai	Raipur	cmraip0789@centralbank.co.in
+
+		Bilaspur	Raipur	bmshah0791@centralbank.co.in
+
+		Jabalpur	Jabalpur	bmjaba0744@centralbank.co.in
+
+
+	TOTAL 117
+
+
+>>> ================================ RESTART ================================
+>>>
+List of Demat Branches
+
+
+
+Sr No 	Zone	Name Of Branch	Region	Email Id
+
+1	Agra	Civil Lines	Agra	bmagra0234@centralbank.co.in
+
+		Aligarh	Agra	bmagra0243@centralbank.co.in
+
+		Dehradun	Dehradun	cmdehr0285@centralbank.co.in
+
+
+		Ghaziabad	Meerut	bmmeer0257@centralbank.co.in
+
+
+		Meerut	Meerut	bmmeer0255@centralbank.co.in
+
+
+
+
+2	Ahmedabad	Stock Exchange	Ahmedabad	bmahme31832@centralbank.co.in
+
+
+		Ashram Road(Ahmed)	Ahmedabad	bmahme0541@centralbank.co.in
+
+
+		Gandhi Nagar	Ahmedabad	bmahme1364@centralbank.co.in
+
+
+		HLCC Area	Ahmedabad	bmahme1389@centralbank.co.in
+
+
+		Laldarwaja	Ahmedabad	bmahme0546@centralbank.co.in
+
+
+		Nizampura	Baroda	bmbaro0487@centralbank.co.in
+
+
+		Patel Colony	Jamnagar	bmjamn1289@centralbank.co.in
+
+
+		Jagnanath Plot	Rajkot	bmrajk0570@centralbank.co.in
+
+
+		Surat Main Office	Surat	bmsura0512@centralbank.co.in
+
+
+		Ghod Dhod Road	Surat	bmsura1594@centralbank.co.in
+
+
+
+
+3	Bhopal	Jail Road	Bhopal	bmbhop3134@centralbank.co.in
+
+
+		New Market	Bhopal	bmbhop1454@centralbank.co.in
+
+
+		Jankganj	Gwalior	bmjwali1834@centralbank.co.in
+
+
+		Palasia	Indore	bmindo2349@centralbank.co.in
+
+
+		Siyaganj	Indore	cmindo0764@centralbank.co.in
+
+
+		Jankinagar	Indore	bmindo2122@centralbank.co.in
+
+
+
+
+4	Chandigarh	Ambala Cantt.	Ambala	bmamba0375@centralbank.co.in
+
+
+		Panchkula	Ambala	bmcmba1454@centralbank.co.in
+
+
+		15-A, Faridabad	Rohtak	bmroht2223@centralbank.co.in
+
+
+		Bahadurgarh	Rohtak	bmroht0397@centralbank.co.in
+
+
+		Rohtak, Civil Rd	Rohtak	bmroht0395@centralbank.co.in
+
+
+		Model Town, Sonepat	Rohtak	bmroht0394@centralbank.co.in
+
+
+		Gurgaon	Rohtak	bmroht1026@centralbank.co.in
+
+
+		Simla	Simla	bmsiml1002@centralbank.co.in
+
+
+		Amritsar	Amritsar	bmamri0338@centralbank.co.in
+
+
+		Mandi,Jalandhar City	Jalandhar	bmjala0355@centralbank.co.in
+
+
+		Miller Ganj	Ludhiana	bmludh0361@centralbank.co.in
+
+
+		17-B Chandigarh	Chandigarh	bmchan0412@centralbank.co.in
+
+
+		22-C, Chandigarh	Chandigarh	bmchan0414@centralbank.co.in
+
+
+
+
+5	Chennai	Ernakulam	Cochin	bmcoch0963@centralbank.co.in
+
+
+		Trivandram	Trivandram	bmtriv0937@centralbank.co.in
+
+
+		Alleppey	Kochi	bmkoch0948@centralbank.co.in
+
+
+		Addison Building	Chennai	bmchen0878@centralbank.co.in
+
+
+		Adyar	Chennai	bmchen1293@centralbank.co.in
+
+
+		Anna Nagar	Chennai	bmchen2473@centralbank.co.in
+
+		Chennai Main	Chennai	cmchen0879@centralbank.co.in
+
+
+		Mount Road	Chennai	cmchen0879@centralbank.co.in
+
+
+		T.Nagar	Chennai	bmchen0883@centralbank.co.in
+
+
+		Salem	Coimbatore	cmcoim9093@centralbank.co.in
+
+
+		Coimbatore	Coimbatore	cmcoim0908@centralbank.co.in
+
+
+		Madurai Main	Madurai	bmmadu0914@centralbank.co.in
+
+
+
+
+6	Delhi	Defence Colony	Delhi-A	cmdela0302@centralbank.co.in
+
+
+		Nehru Place	Delhi-A	agmdela1410@centralbank.co.in
+
+
+		Parliament Street	Delhi-A	agmdela0316@centralbank.co.in
+
+
+		Safdarganj	Delhi-A	bmdela0379@centralbank.co.in
+
+
+		Chandani Chowk	Delhi-B	bmdelb0288@centralbank.co.in
+
+
+		Delhi Cantt.	Delhi-B	bmdelb1606@centralbank.co.in
+
+
+		Karol Baug	Delhi-B	bmdelb0309@centralbank.co.in
+
+
+		Press Area	Delhi-B	agmdelb0306@centralbank.co.in
+
+
+		M.I.Road	Jaipur	bmjaip0429@centralbank.co.in
+
+
+		Tonk Road	Jaipur	bmjaip1478@centralbank.co.in
+
+		G.P.Circle	Kota	bmkota1016@centralbank.co.in
+
+
+
+
+7	Guwahati	Guwahati	Guwahati	cmguwa0001@centralbank.co.in
+
+
+		Dispur	Guwahati	bmguwa3203@centralbank.co.in
+
+
+
+
+8	Hyderabad	Brigade Road	Bangalore	cmbang0847@centralbank.co.in
+
+
+		Bangalore City	Bangalore	cmbang0850@centralbank.co.in
+
+
+		Miller Road	Bangalore	bmbang2314@centralbank.co.in
+
+
+		Khairatabad	Hyderabad	bmhyde0810@centralbank.co.in
+
+
+		C.F.B Hyderabad	Hyderabad	agmhyde0808@centralbank.co.in
+
+
+		Kalyan Nagar	Hyderabad	bmhyde2369@centralbank.co.in
+
+
+		Benz Circle	Vijaywada	bmvija1567@centralbank.co.in
+
+
+		Visakhapatnam	Vijaywada	cmvija0824@centralbank.co.in
+
+
+
+
+9	Kolkata	Janpath-BBSR	Bhubaneshwar	bmbhub1969@centralbank.co.in
+
+
+		Durgapur	Durgapur	bmdurg0120@centralbank.co.in
+
+
+		Kolkata M.O.	Kolkata-North	cmoperkolk0107@centralbank.co.in
+
+
+		Rabindra Sarani	Kolkata-North	bmkoln0110@centralbank.co.in
+
+
+		Red Cross Place	Kolkata North	bmkoln01713@centralbank.co.in
+
+
+		Park Street	Kolkata-North	bmkols0108@centralbank.co.in
+
+
+		Camac Street	Kolkata-South	bmkols0093@centralbank.co.in
+
+
+		Shyambazar	Kolkata-South	bmkols0111@centralbank.co.in
+
+
+		Ballygunj	Kolkata-South	bmkols0090@centralbank.co.in
+
+
+		Siliguri	Siliguri	bmsili0125@centralbank.co.in
+
+
+
+
+10	Lucknow	Gumati-5	Kanpur	cmkanp0156@centralbank.co.in
+
+
+		Joppling Road	Lucknow	bmluck2768@centralbank.co.in
+
+
+		Jhansi-Gwalior Road	Lucknow	bmjhan1216@centralbank.co.in
+
+
+		Mahanagar	Lucknow	bmluck2148@centralbank.co.in
+
+
+		Nagarpalika	Varanasi	bmvara0197@centralbank.co.in
+
+
+
+
+11	MMZO	Andheri	NMRO	agmmumn0595@centralbank.co.in
+
+
+		Borivali	NMRO	bmmumn0602@centralbank.co.in
+
+
+		Chembur	NMRO	bmmumn0623@centralbank.co.in
+
+
+		Naigaon	NMRO	bmmumn1209@centralbank.co.in
+
+
+		Prabhadevi	NMRO	bmmumn0628@centralbank.co.in
+
+
+		Wadala	NMRO	bmmumn0634@centralbank.co.in
+
+
+		Nariman Point	SMRO	bmmums1067@centralbank.co.in
+
+
+		Ballard Estate	SMRO	cmmums0597@centralbank.co.in
+
+
+		Kalbadevi Rd	SMRO	bmmums0610@centralbank.co.in
+
+
+		Share Bazar	SMRO	bmmums0630@centralbank.co.in
+
+		Pedder Road	SMRO	bmmums0626@centralbank.co.in
+
+
+		Panaji	Goa	bmpana0713@centralbank.co.in
+
+
+		CBD Belapur	Thane	bmthan3154@centralbank.co.in
+
+
+		Modellagram	Thane	bmthan0637@centralbank.co.in
+
+
+		Vishnu Nagar	Thane	bmthan2379@centralbank.co.in
+
+
+
+
+
+
+12	Muzaffarpur	----
+
+13	Nagpur	Amravati	Amravati	bmamra0699@centralbank.co.in
+
+
+		Ramdas Peth	Nagpur	bmnagp0694@centralbank.co.in
+
+
+		Nagpur	Nagpur	cmnagp0695@centralbank.co.in
+
+
+
+
+14	Patna	Boring Road	Patna	bmpatn0008@centralbank.co.in
+
+
+		Budh Marg	Patna	bmpatn1488@centralbank.co.in
+
+
+		Rajendranagar	Patna	bmpatn0011@centralbank.co.in
+
+
+		Telco Town-Jamshedpur	Ranchi	bmranc1180@centralbank.co.in
+
+
+		Lalpur, Ranchi	Ranchi	bmranc1223@centralbank.co.in
+
+
+
+
+15	Pune	Ahmednagar	Ahmednagar	Bmnaga@centralbank.co.in
+
+
+		Aurangabad	Aurangabad	bmaura0678@centralbank.co.in
+
+
+		Nasik	Nasik	bmnasi0706@centralbank.co.in
+
+		Deccan Gymkhana	Pune	bmpune0655@centralbank.co.in
+
+
+		Shivaji Nagar	Pune	bmpune0656@centralbank.co.in
+
+
+		Pune Camp	Pune	bmpune0658@centralbank.co.in
+
+
+		Koregaon Park	Pune	bmpune3089@centralbank.co.in
+
+		Sangli	Pune	bmpune0651@centralbank.co.in
+
+
+
+
+16	Raipur	Chhatisgarh College	Raipur	bmraip3185@centralbank.co.in
+
+
+		Bhilai	Raipur	cmraip0789@centralbank.co.in
+
+
+		Bilaspur	Raipur	bmshah0791@centralbank.co.in
+
+
+		Jabalpur	Jabalpur	bmjaba0744@centralbank.co.in
+
+
+
+
+	TOTAL 117
+
+
+
+>>> ================================ RESTART ================================
+>>>
+Enter the file name : BankName.txt
+
+Traceback (most recent call last):
+  File "C:/Python27/demo1.py", line 3, in <module>
+    myFile = open(myFileName,"r")
+IOError: [Errno 2] No such file or directory: 'BankName.txt'
+>>> ================================ RESTART ================================
+>>>
+Enter the file name : BankList.txt
+139
+>>> ================================ RESTART ================================
+>>>
+Enter the file name : BankName.txt
+File BankName.txt cannot be opened
+>>> import os
+>>> os.getcwd
+<built-in function getcwd>
+>>> os.getcwd()
+'C:\\Python27'
+>>> os.chdir("C:/demo")
+>>> os.getcwd()
+'C:\\demo'
+>>> os.mkdir("demo2")
+>>> os.getcwd()
+'C:\\demo'
+>>> os.remove("BankList2.txt")
+
+Traceback (most recent call last):
+  File "<pyshell#28>", line 1, in <module>
+    os.remove("BankList2.txt")
+WindowsError: [Error 2] The system cannot find the file specified: 'BankList2.txt'
+>>> os.remove("bankList2.txt")
+>>> os.rename("BankList.txt","myBankList.txt")
+>>> ================================ RESTART ================================
+>>>
+Enter the file name : BankList.txt
+		Telco Town-Jamshedpur	Ranchi	bmranc1180@centralbank.co.in
+
+
+		Lalpur, Ranchi	Ranchi	bmranc1223@centralbank.co.in
+
+
+>>> print myFile
+<open file 'BankList.txt', mode 'r' at 0x0000000002C3C540>
+>>> myLine = myFile.read(20)
+>>> print myFine
+
+Traceback (most recent call last):
+  File "<pyshell#33>", line 1, in <module>
+    print myFine
+NameError: name 'myFine' is not defined
+>>> print myLine
+
+>>> myFile=open("BankList.txt")
+>>> myLine = myFile.read(100)
+>>> print myLine
+List of Demat Branches
+
+Sr No 	Zone	Name Of Branch	Region	Email Id
+1	Agra	Civil Lines	Agra	bmagra023
+>>> os.getcwd()
+
+Traceback (most recent call last):
+  File "<pyshell#38>", line 1, in <module>
+    os.getcwd()
+NameError: name 'os' is not defined
+>>> import os
+>>> os.getcwd()
+'C:\\Python27'
+>>> myFile2 = open("myNewFile.txt","w")
+>>> print mtFile2
+
+Traceback (most recent call last):
+  File "<pyshell#42>", line 1, in <module>
+    print mtFile2
+NameError: name 'mtFile2' is not defined
+>>> print myFile2
+<open file 'myNewFile.txt', mode 'w' at 0x0000000002C3C540>
+>>> line1 = "Hello THis is the first line"
+>>> myFile2.write(line1)
+>>> myFile2.close()
+>>> line2="This is the second line"
+>>> myFile2.open('myNewFile','w')
+
+Traceback (most recent call last):
+  File "<pyshell#48>", line 1, in <module>
+    myFile2.open('myNewFile','w')
+AttributeError: 'file' object has no attribute 'open'
+>>> myFile2 = open("myNewFile","w")
+>>> import turtle
+>>> ================================ RESTART ================================
+>>>
+>>> print Turtle.__doc__
+
+Traceback (most recent call last):
+  File "<pyshell#51>", line 1, in <module>
+    print Turtle.__doc__
+NameError: name 'Turtle' is not defined
+>>> import Turtle
+
+Traceback (most recent call last):
+  File "<pyshell#52>", line 1, in <module>
+    import Turtle
+ImportError: No module named Turtle
+>>> import turtle
+>>> turtle.__doc__
+'\nTurtle graphics is a popular way for introducing programming to\nkids. It was part of the original Logo programming language developed\nby Wally Feurzig and Seymour Papert in 1966.\n\nImagine a robotic turtle starting at (0, 0) in the x-y plane. After an ``import turtle``, give it\nthe command turtle.forward(15), and it moves (on-screen!) 15 pixels in\nthe direction it is facing, drawing a line as it moves. Give it the\ncommand turtle.right(25), and it rotates in-place 25 degrees clockwise.\n\nBy combining together these and similar commands, intricate shapes and\npictures can easily be drawn.\n\n----- turtle.py\n\nThis module is an extended reimplementation of turtle.py from the\nPython standard distribution up to Python 2.5. (See: http://www.python.org)\n\nIt tries to keep the merits of turtle.py and to be (nearly) 100%\ncompatible with it. This means in the first place to enable the\nlearning programmer to use all the commands, classes and methods\ninteractively when using the module from within IDLE run with\nthe -n switch.\n\nRoughly it has the following features added:\n\n- Better animation of the turtle movements, especially of turning the\n  turtle. So the turtles can more easily be used as a visual feedback\n  instrument by the (beginning) programmer.\n\n- Different turtle shapes, gif-images as turtle shapes, user defined\n  and user controllable turtle shapes, among them compound\n  (multicolored) shapes. Turtle shapes can be stretched and tilted, which\n  makes turtles very versatile geometrical objects.\n\n- Fine control over turtle movement and screen updates via delay(),\n  and enhanced tracer() and speed() methods.\n\n- Aliases for the most commonly used commands, like fd for forward etc.,\n  following the early Logo traditions. This reduces the boring work of\n  typing long sequences of commands, which often occur in a natural way\n  when kids try to program fancy pictures on their first encounter with\n  turtle graphics.\n\n- Turtles now have an undo()-method with configurable undo-buffer.\n\n- Some simple commands/methods for creating event driven programs\n  (mouse-, key-, timer-events). Especially useful for programming games.\n\n- A scrollable Canvas class. The default scrollable Canvas can be\n  extended interactively as needed while playing around with the turtle(s).\n\n- A TurtleScreen class with methods controlling background color or\n  background image, window and canvas size and other properties of the\n  TurtleScreen.\n\n- There is a method, setworldcoordinates(), to install a user defined\n  coordinate-system for the TurtleScreen.\n\n- The implementation uses a 2-vector class named Vec2D, derived from tuple.\n  This class is public, so it can be imported by the application programmer,\n  which makes certain types of computations very natural and compact.\n\n- Appearance of the TurtleScreen and the Turtles at startup/import can be\n  configured by means of a turtle.cfg configuration file.\n  The default configuration mimics the appearance of the old turtle module.\n\n- If configured appropriately the module reads in docstrings from a docstring\n  dictionary in some different language, supplied separately  and replaces\n  the English ones by those read in. There is a utility function\n  write_docstringdict() to write a dictionary with the original (English)\n  docstrings to disc, so it can serve as a template for translations.\n\nBehind the scenes there are some features included with possible\nextensions in mind. These will be commented and documented elsewhere.\n\n'
+>>> print turtle.__doc__
+
+Turtle graphics is a popular way for introducing programming to
+kids. It was part of the original Logo programming language developed
+by Wally Feurzig and Seymour Papert in 1966.
+
+Imagine a robotic turtle starting at (0, 0) in the x-y plane. After an ``import turtle``, give it
+the command turtle.forward(15), and it moves (on-screen!) 15 pixels in
+the direction it is facing, drawing a line as it moves. Give it the
+command turtle.right(25), and it rotates in-place 25 degrees clockwise.
+
+By combining together these and similar commands, intricate shapes and
+pictures can easily be drawn.
+
+----- turtle.py
+
+This module is an extended reimplementation of turtle.py from the
+Python standard distribution up to Python 2.5. (See: http://www.python.org)
+
+It tries to keep the merits of turtle.py and to be (nearly) 100%
+compatible with it. This means in the first place to enable the
+learning programmer to use all the commands, classes and methods
+interactively when using the module from within IDLE run with
+the -n switch.
+
+Roughly it has the following features added:
+
+- Better animation of the turtle movements, especially of turning the
+  turtle. So the turtles can more easily be used as a visual feedback
+  instrument by the (beginning) programmer.
+
+- Different turtle shapes, gif-images as turtle shapes, user defined
+  and user controllable turtle shapes, among them compound
+  (multicolored) shapes. Turtle shapes can be stretched and tilted, which
+  makes turtles very versatile geometrical objects.
+
+- Fine control over turtle movement and screen updates via delay(),
+  and enhanced tracer() and speed() methods.
+
+- Aliases for the most commonly used commands, like fd for forward etc.,
+  following the early Logo traditions. This reduces the boring work of
+  typing long sequences of commands, which often occur in a natural way
+  when kids try to program fancy pictures on their first encounter with
+  turtle graphics.
+
+- Turtles now have an undo()-method with configurable undo-buffer.
+
+- Some simple commands/methods for creating event driven programs
+  (mouse-, key-, timer-events). Especially useful for programming games.
+
+- A scrollable Canvas class. The default scrollable Canvas can be
+  extended interactively as needed while playing around with the turtle(s).
+
+- A TurtleScreen class with methods controlling background color or
+  background image, window and canvas size and other properties of the
+  TurtleScreen.
+
+- There is a method, setworldcoordinates(), to install a user defined
+  coordinate-system for the TurtleScreen.
+
+- The implementation uses a 2-vector class named Vec2D, derived from tuple.
+  This class is public, so it can be imported by the application programmer,
+  which makes certain types of computations very natural and compact.
+
+- Appearance of the TurtleScreen and the Turtles at startup/import can be
+  configured by means of a turtle.cfg configuration file.
+  The default configuration mimics the appearance of the old turtle module.
+
+- If configured appropriately the module reads in docstrings from a docstring
+  dictionary in some different language, supplied separately  and replaces
+  the English ones by those read in. There is a utility function
+  write_docstringdict() to write a dictionary with the original (English)
+  docstrings to disc, so it can serve as a template for translations.
+
+Behind the scenes there are some features included with possible
+extensions in mind. These will be commented and documented elsewhere.
+
+
+>>> ================================ RESTART ================================
+>>>
+>>> ================================ RESTART ================================
+>>>
+>>> ================================ RESTART ================================
+>>>
+
+Traceback (most recent call last):
+  File "C:/Python27/demo1.py", line 23, in <module>
+    draw_square()
+  File "C:/Python27/demo1.py", line 17, in draw_square
+    myTurtle2 = turtle.Turtle()
+  File "C:\Python27\lib\lib-tk\turtle.py", line 3706, in __init__
+    visible=visible)
+  File "C:\Python27\lib\lib-tk\turtle.py", line 2461, in __init__
+    self._update()
+  File "C:\Python27\lib\lib-tk\turtle.py", line 2564, in _update
+    self._update_data()
+  File "C:\Python27\lib\lib-tk\turtle.py", line 2550, in _update_data
+    self.screen._incrementudc()
+  File "C:\Python27\lib\lib-tk\turtle.py", line 1239, in _incrementudc
+    raise Terminator
+Terminator
+>>> ================================ RESTART ================================
+>>>
+>>> ================================ RESTART ================================
+>>>
+
+Traceback (most recent call last):
+  File "C:/Python27/demo1.py", line 1, in <module>
+    class StudentInfo:
+  File "C:/Python27/demo1.py", line 4, in StudentInfo
+    LastStudent
+NameError: name 'LastStudent' is not defined
+>>> ================================ RESTART ================================
+>>>
+>>> student1 = StudentInfo("Mohan","1BM14CS077",20)
+>>> student1.displayStudent()
+
+Traceback (most recent call last):
+  File "<pyshell#57>", line 1, in <module>
+    student1.displayStudent()
+AttributeError: StudentInfo instance has no attribute 'displayStudent'
+>>> ================================ RESTART ================================
+>>>
+>>> student1 = StudentInfo("Mohan","1BM14CS077",20)
+>>> student1.displayRecord()
+Name : Mohan
+USN : 1BM14CS077
+Age : 20
+>>> student1 = StudentInfo("Rohan","1BM14CS210",19)
+>>> student2 = StudentInfo("Ram","1BM14CS001",20)
+>>> student1.displayRecord
+<bound method StudentInfo.displayRecord of <__main__.StudentInfo instance at 0x0000000002C1C7C8>>
+>>> student1.displayRecord()
+Name : Rohan
+USN : 1BM14CS210
+Age : 19
+>>> student2.displayRecord()
+Name : Ram
+USN : 1BM14CS001
+Age : 20
+>>> StudentInfo.countStudent
+3
+>>> StudentInfo.LastStudent
+'Ram'
+>>> StudentInfo.__doc__
+'MySample Class'

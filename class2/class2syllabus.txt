@@ -1,0 +1,29 @@
+This is/was the syllabus of Python SIG. Conducted at BMSCE, Bangalore.
+Under BMSCE IEEE.
+Taught by Pranav S. Bijapur and Tarun Verma.
+Syllabus by Pranav S. Bijapur and Tarun Verma	
+
+Class 2 – 29/9/2015
+
+Revision of raw_input - reads as string type
+print statement - use parentheses if you want
+other important built-ins - len(), range() (xrange; and difference), sum(), max(), min()
+functions used for type conversion - int() float() str()
+use dir(), brief mention of list and string methods 
+reading documentation
+strings and string methods (not too detailed) - strings are immutable, indexable ([start:stop:step]), single/double quotes
+string formatting, .format()
+if, else, elif
+revision of boolean type
+simple practice programs using if-else 
+
+loops - while and for loops - syntax
+while condition
+for itervar in (x)range(iternum)
+what does range return anyway?; can it be extended to other lists?
+for loops - flexibility,
+for item in sequence:
+specific examples:
+-for char in string
+-for line in file
+-for key in dict

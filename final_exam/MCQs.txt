@@ -1,0 +1,259 @@
+﻿Python SIG 2015, BMSCE, Bangalore
+
+FINAL EXAM – PYA - 20/11/2015
+
+- All questions are Multiple Choice Questions
+
+- Only one option is correct and carries 1 mark
+
+- There is no negative marking
+
+- Some questions actually are “2 choice questions that have 4 choices”,
+
+  which is totally a real thing and not something I just made up
+
+- In case of any ambiguity, choose the option that is the most appropriate.
+
+  (Haha just kidding, all questions are pretty well defined)
+
+---------------------------------------------------------------------------------------------------
+
+
+1) Which of these reads input as strings
+
+A. input()		B. raw_input()		C. Both 		D.  None
+
+
+
+2) If a = ‘a’ and b = ‘b’; then a + b is
+
+A. ‘ab’      B.  TypeError        C. Sum of ASCII values        D. Sum of UTF-8 values
+
+
+
+3) Which of these are immutable
+
+A. Strings                 B.  Lists                    C. Classes                  D. Dictionaries
+
+
+
+4) Assuming ‘import math’ and ‘from math import sin’ are written at the top of the program,
+
+   which of these will work in the program
+
+A. math.sin()                  B. sin()                   C. Both                   D. SyntaxError
+
+
+
+5) The difference between ‘print “hello!”’ and ‘print(“hello!”)’ style print statement/function is that
+
+A. Both work in py2 and not py3
+
+B. Both of them work in py3 and not py2
+
+C.  Both of them work in py2 and have similar behaviour
+
+D. Both of them work in py2 and do not have similar behaviour
+
+
+
+6) If s = ‘hello’ then s[:4:2] is
+
+A. ‘hlo’                  B. ‘hl’                    C. ‘el’                   D. ‘elo’
+
+
+
+7)  The Boolean expression True or False and True evaluates to
+
+A. True       B. False            C. SomeError     D. Even you know this option is useless
+
+
+
+8) “a = list()
+
+    for i in xrange(5):
+
+        a.append(i)
+
+        print a” prints:
+
+A.  a list [0..5]       B.  a list [0..4]
+
+C. 5 lists going from [0] to [0..5]       D. 5 lists going from [0] to [0..4]
+
+
+
+9) “a = []
+
+    for i in a:  print ‘abc’ “ prints
+
+A. nothing to stdout         B. ‘abc’, once         C. ‘abc’, thrice           D. error
+
+
+
+10) “def abc(d, e=1): return d + e” and “abc(4)” give output
+
+A. 4                   B. 5                   C. TypeError                   D. SyntaxError
+
+
+
+11) “def func(a):
+
+        a = 1
+
+     a = ‘a’
+
+     b = func(a)
+
+     print a,b” could print
+
+
+ A.  1  <function func at 0x01F29A30>
+
+ B.  a <function func at 0x01F29A70>
+
+ C. 1 None
+
+ D. a None
+
+
+
+12) “a = 1, 2, 3; a.append(4)” gives
+
+A. TypeError          B. AttributeError       C. SyntaxError            D. No error
+
+
+
+13) “a = {‘b’:2}
+
+    for i in a: print i” prints
+
+A. b                   B. 2                   C. (b, 2)                   D. Prints nothing
+
+
+
+14) “a = {‘b’:2}; print a[‘b’]” prints
+
+A. b                  B. 2                   C. (b, 2)                   D. Prints nothing
+
+
+
+15) When we try to access some value in a dictionary with an invalid key it gives
+
+A. KeyError                   B. TypeError                   C. None                   D. 0
+
+
+
+16)  In a dictionary, which of these have to be immutable
+
+A. key           B. value                    C. both                   D. none
+
+
+
+17)  If list1 = [1, 2, ’a’], and list2 = list1*2 is
+
+A. [1, 2, ’a’]       B. [1, 2, ’a’, 1, 2, ’a’]    C. [1, 2, ’a’, [1, 2, ’a’]]   D. [[1, 2, ’a’], 1, 2, ’a’]
+
+
+
+18) “try:
+        print 1 + ’2’
+     except:
+	    pass” causes a TypeError
+
+A. True   B. False      C. Computer burns      D. It starts raining
+
+
+
+19)  Which of these cannot be a variable
+
+A. list    B. len      C. None      D. none (different from the other one)
+
+
+
+20) 5%10 returns
+
+A. 0   B.  5     C. 10      D. -1
+
+
+
+21) “print type(1.0) == type(1)” prints
+
+A. True   B. False       C.  Come on      D. Reading these is pointless
+
+
+
+22) ‘for i in [‘a’, ‘b’, ‘c’, ‘d’][::-1]: print i’, prints
+
+A. ‘a\nb\nc\nd\n’   B. ‘d\nc\nb\na\n’      C. ‘abcd’       D. ‘dcba’
+
+
+
+23) Every Python class will have which of these methods
+
+A. __class__   B. __self__      C. __object__       D. __init__
+
+
+
+24) “fileobj = open(‘test.txt’, ‘r’); f1 = fileobj.read(); f2 = fileobj.read(); print f1==f2” prints
+
+    (assume test.txt exists in the current path and contains some data)
+
+A.True   B. False       C. true      D. false
+
+(Hint: last two are invalid)
+
+
+
+25) “a = [1,2,3]; v = 0
+
+    for i in a: v +=1”
+
+Value of v is
+
+A. 0   B.  3       C.   6      D.  none
+
+
+
+26) Which of these is Python generally not used for
+
+A. Web programming  B. Scripting  C. Low level programming D. Desktop apps/games
+
+
+
+27) Which of these returns True (where ‘a’ is a string)
+
+A. a == a.split().join()  B. a != a.join().split()  C. a == ‘’.join(a.split()) D. a == ‘ ‘.join(a.split())
+
+
+
+28) If a = ‘abc d’, a.split() returns
+
+A. ( ’abc’, ‘d’)   B. [‘abc’, ‘d’]      C. both      D. none
+
+
+
+29) ‘a’ == “a” is
+
+A. True   B. False      C. can’t say (or write)     D. I don’t know
+
+
+
+30)  “a = b[:]” (where a and b are lists) is done because
+
+A. We want to assign b to a
+
+B. We want the extra work of slicing to make the computer work and suffer
+
+C. It is easier to change code in the future if we want only a part of b and not every element of b to be assigned to a
+
+D. We want to store a copy of b in memory, not just a pointer to b
+
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+- All programming questions were verified on Python 2.7.9 on Windows Powershell
+
+- All questions are by Pranav S Bijapur and Tarun Verma
