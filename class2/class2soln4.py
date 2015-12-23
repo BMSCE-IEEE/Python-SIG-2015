@@ -4,7 +4,8 @@
 # Solution by Pranav S Bijapur
 # Question statement:
 #	Input two strings. One  takes in login_ID and other password.
-#	It prints 'login_ID is successful' if password is 'password'. Else should show a fail message and keep prompting user for password.
+#	It prints 'login_ID is successful' if password is 'password'.
+#   Else should show a fail message and keep prompting user for password.
 
 
 username = raw_input("Enter username: ")

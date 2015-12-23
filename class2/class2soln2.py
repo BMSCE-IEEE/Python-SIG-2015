@@ -5,7 +5,8 @@
 # Question statement:
 # Write a program that takes input  of the form
 #	'num1,num2,[any one of +-*/]' as a string
-#	and performs the given operation. In other words, your program is a simple calculator which can perform floating point arithmetic.
+#	and performs the given operation. In other words, your program is a simple calculator
+#   which can perform floating point arithmetic.
 #	Try making improvements like asking for no.
 #	of decimal digits to be displayed.
 

@@ -10,4 +10,4 @@ for i in range(5):
     num = float(raw_input("Enter {} number: ".format(i+1)))
     total += num
 average = total / 5
-print "Average is", average 
+print "Average is", average
