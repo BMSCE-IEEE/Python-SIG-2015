@@ -12,27 +12,27 @@ temp_phone_number = None
 name_to_num = {}
 exit_bool = False
 while not exit_bool:
-	try:
-		temp_first_name = raw_input("Enter first name: ")
-		temp_last_name = raw_input("Enter last name: ")
-		temp_phone_number = int(raw_input("Enter phone number: "))
-		name_to_num[(temp_last_name, temp_first_name)] = temp_phone_number
-	except TypeError, e:
-		print("A TypeError happened.")
-		print "The error was", e
-	except ValueError, e:
-		print("A ValueError happened.")
-		print "The error was", e
-	else:
-		print("Data saved successfully.")
-	finally:
-		print("This is getting printed no matter what.")
-	print("Type 'y' to stop. ")
-	exit_bool = True if raw_input() == 'y' else False
+    try:
+        temp_first_name = raw_input("Enter first name: ")
+        temp_last_name = raw_input("Enter last name: ")
+        temp_phone_number = int(raw_input("Enter phone number: "))
+        name_to_num[(temp_last_name, temp_first_name)] = temp_phone_number
+    except TypeError, e:
+        print("A TypeError happened.")
+        print "The error was", e
+    except ValueError, e:
+        print("A ValueError happened.")
+        print "The error was", e
+    else:
+        print("Data saved successfully.")
+    finally:
+        print("This is getting printed no matter what.")
+    print("Type 'y' to stop. ")
+    exit_bool = True if raw_input() == 'y' else False
 print(name_to_num)
 sorted_names = []; sorted_numbers = []
 for i in sorted(name_to_num.keys()):
-	sorted_names.append(i)
-	sorted_numbers.append(name_to_num[i])
+    sorted_names.append(i)
+    sorted_numbers.append(name_to_num[i])
 print(sorted_names)
 print(sorted_numbers)

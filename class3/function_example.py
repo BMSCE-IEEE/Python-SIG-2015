@@ -4,11 +4,11 @@
 # By Pranav S Bijapur
 
 def thisisafunction(param):
-	"""This is the docstring
-	of this function.
-	"""
-	# this is a SyntaxError
-	prnit "Hi", param
-	# this is an AttributeError
-	[1].capitalize()
+    """This is the docstring
+    of this function.
+    """
+    # this is a SyntaxError
+    prnit "Hi", param
+    # this is an AttributeError
+    [1].capitalize()
 arg = raw_input("Type something: ")

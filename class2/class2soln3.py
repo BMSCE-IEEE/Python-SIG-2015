@@ -3,8 +3,8 @@
 # Question by Tarun Verma
 # Solution by Pranav S Bijapur
 # Question statement:
-# 	Input an angle as degrees. And find a trigonometric ratio based on users choice[out of sin, cos and tan].
-# 	Do this 'n' times, where 'n' was entered by the user initially.
+# Input an angle as degrees. And find a trigonometric ratio based on users choice[out of sin, cos and tan].
+# Do this 'n' times, where 'n' was entered by the user initially.
 
 import math
 

@@ -3,7 +3,8 @@
 # Questions by Pranav S. Bijapur, Tarun Verma, Rahul Kumar
 # Solution by Pranav S Bijapur
 # Question statement:
-# Write a program that calculates the 'value' of a string. It should prompt the user for a string and print the "value"
+# Write a program that calculates the 'value' of a string.
+# It should prompt the user for a string and print the "value"
 #   Calculate value using the following scheme:
 #	a/A - 0
 #	b/B - 1

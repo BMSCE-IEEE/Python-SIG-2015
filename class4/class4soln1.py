@@ -13,29 +13,30 @@ import string
 
 version = '1.0'
 
+
 # This code is taken from the palindromechecker.py of the previous class.
 def strip_punc(string_arg, ignore_punc_bool, ignore_caps_bool):
-	"""Removes whitespace and optionally punctuation and/or capitalization from given string.
-	"""
-	list_form = [i for i in string_arg] # list comprehension, how elegant!
-	print list_form
-	new_list_form = []
-	if ignore_punc_bool:
-		for i in list_form:
-			if i not in string.whitespace and i not in string.punctuation:
-				new_list_form.append(i)
-	else:
-		for i in list_form:
-			if i not in string.whitespace:
-				new_list_form.append(i)
-	if ignore_caps_bool:
-		new_list_form = [i.lower() for i in new_list_form]
-	print 'new', new_list_form
-	return new_list_form
+    """Removes whitespace and optionally punctuation and/or capitalization from given string.
+    """
+    list_form = [i for i in string_arg] # list comprehension, how elegant!
+    print list_form
+    new_list_form = []
+    if ignore_punc_bool:
+        for i in list_form:
+            if i not in string.whitespace and i not in string.punctuation:
+                new_list_form.append(i)
+    else:
+        for i in list_form:
+            if i not in string.whitespace:
+                new_list_form.append(i)
+    if ignore_caps_bool:
+        new_list_form = [i.lower() for i in new_list_form]
+    print 'new', new_list_form
+    return new_list_form
 
 def main():
-	pass
+    pass
 
 if __name__ == '__main__':
-	main()
+    main()
 # Why is this required?
